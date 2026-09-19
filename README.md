@@ -9,6 +9,7 @@ Copy any `.md` file from this repo into `~/.claude/commands/`:
 ```bash
 cp wp-support-brief.md ~/.claude/commands/
 cp mercor-interview-support.md ~/.claude/commands/
+cp ai-profile.md ~/.claude/commands/
 ```
 
 Then invoke in Claude Code with `/skill-name [args]`.
@@ -41,6 +42,22 @@ Uses `{{placeholder}}` fields injected by an orchestration layer before invocati
 
 ```
 /mercor-interview-support [inject platform data]
+```
+
+---
+
+### `/ai-profile`
+
+**Load Ahmad's full AI fluency profile for use in job applications.**
+
+Surfaces all AI projects, tools, Skills, MCP work, production PRs, and vibe coding track record in a structured format. Invoke before writing any CV, cover letter, or application answer for an AI-related role so Claude has authoritative context without needing to re-derive it from conversation.
+
+Covers: Damha AI, HubSpot RAG pipeline, Toom, Royal Retreat, Claude Code Skills authored, WordPress Support Investigation MCP, production PRs on WordPress.com, Claude infrastructure setup, and summary stats.
+
+```
+/ai-profile
+/ai-profile What have I built with Claude Code?
+/ai-profile Skills and MCP experience
 ```
 
 ---
